@@ -19,9 +19,7 @@ set -ouex pipefail
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
-ostree config set sysroot.composefs true
-
-dnf5 remove -y ptyxis
+dnf5 remove -y ptyxis distrobox toolbx
 
 dnf5 install -y neovim konsole plasma-firewall cutter-re rizin-devel kcalc filelight libreoffice thunderbird 
 
