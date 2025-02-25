@@ -23,4 +23,5 @@ dnf5 remove -y ptyxis
 
 dnf5 install -y neovim konsole plasma-firewall cutter-re rizin-devel kcalc filelight libreoffice thunderbird 
 
-flatpak install -y com.spotify.Client org.librepcb.LibrePCB org.librecad.LibreCAD org.kicad.KiCad org.prismlauncher.PrismLauncher
+# Add flatpak remote before installing
+# flatpak install -y com.spotify.Client org.librepcb.LibrePCB org.librecad.LibreCAD org.kicad.KiCad org.prismlauncher.PrismLauncher
