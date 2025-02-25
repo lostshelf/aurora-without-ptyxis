@@ -19,7 +19,7 @@ set -ouex pipefail
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
- bootc install to-filesystem --karg=ostree.prepare-root.composefs=0
+ostree config set sysroot.composefs true
 
 dnf5 remove -y ptyxis
 
